@@ -6,8 +6,8 @@ class CheesesController < ApplicationController
   end
 
   def show
-    cheese = Cheese.find_by(id: params[:id])
-    render json: cheese
+    cheeses = Cheese.find_by(id: params[:id])
+    render json
   end
 
 end
